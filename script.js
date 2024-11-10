@@ -1,4 +1,4 @@
-// Smooth Scrolling for navigation links
+// Smooth Scrolling for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -11,7 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Display a greeting based on the time of day
+// Function to Display a Greeting Based on Time of Day
 function displayGreeting() {
     const now = new Date();
     const hours = now.getHours();
@@ -28,5 +28,5 @@ function displayGreeting() {
     document.getElementById('greeting').innerText = greeting;
 }
 
-// Call the function on page load
+// Call the displayGreeting function when the page loads
 window.onload = displayGreeting;
